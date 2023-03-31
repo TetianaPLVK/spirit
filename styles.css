@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(./img/balls.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* block-size: auto auto; */
+  /* background-position: 0 0;  */
+  background-size: cover;
+  
+
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  /* display: flex; */
+  /* height: 40px; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: 8px 20px; */
+  /* z-index: 1; */
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.nav__logo {
+  margin-left: 60px;
+  font-size: 40px;
+  color: bisque;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-right: 60px;
+}
+
+/* .nav__item {
+  padding: 20px;
+
+} */
+.nav__link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main__section {
+ 
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.main__welcome {
+  height: 500px;
+  
+     
+}
+
+.main__h2 { 
+  margin: 0;
+}
+
+
+/* .main__about {
+  background-color: #343a40;
+} */
+
+/* .main__service {
+ background-color: black;
+} */
+
+/* .main__resume {
+  background-color: #343a40;
+} */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: beige;
+}
+
+/*# sourceMappingURL=styles.css.map */
