@@ -6,20 +6,12 @@ body {
   background-image: url(./img/balls.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* : auto auto; */
-  /* background-position: 0 0;  */
   background-size: cover;
 }
 
 .header {
   position: sticky;
   top: 0;
-  /* display: flex; */
-  /* height: 40px; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* padding: 8px 20px; */
-  /* z-index: 1; */
   background-repeat: no-repeat;
 }
 
@@ -61,6 +53,9 @@ body {
 }
 
 .main__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: white;
@@ -75,15 +70,39 @@ body {
 }
 .main__section:first-child {
   background: none;
+  height: 100vh;
 }
-.main__welcome {
-  height: 500px;  
-}
+/* .main__welcome {
+ } */
 
 .main__h2 { 
   margin: 0;
   font-size: 30px;
   text-align: center;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.main__buttom {
+  display: inline;
+  text-align: center; 
+  padding: 8px 30px;
+  margin: 0 20px 0 20px;
+  background: #f55422;;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border: 2px solid #f55422;;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+.main__buttom:hover {
+  background: black;
 }
 
 
