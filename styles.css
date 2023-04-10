@@ -7,12 +7,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Rubik', sans-serif;
 }
 
 .header {
   position: sticky;
   top: 0;
-  background-repeat: no-repeat;
 }
 
 .nav {
@@ -36,10 +36,6 @@ body {
   margin-right: 60px;
 }
 
-/* .nav__item {
-  padding: 20px;
-
-} */
 .nav__link {
   font-size: 20px;
   color: white;
@@ -54,11 +50,12 @@ body {
 
 .main__section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  padding: 10px 200px;  
   color: white;
+
 }
 
 .main__section:nth-child(odd) {
@@ -69,18 +66,16 @@ body {
   background-color: rgb(48, 40, 40);
 }
 .main__section:first-child {
-  background: none;
+  background: transparent;
   height: 100vh;
 }
-/* .main__welcome {
- } */
 
 .main__h2 { 
   margin: 0;
   font-size: 30px;
   text-align: center;
 }
-.main__form {
+.main__form-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,22 +96,63 @@ body {
   cursor: pointer;
 
 }
-.main__buttom:hover {
+.main__button:hover {
   background: black;
 }
 
 
-/* .main__about {
-  background-color: #343a40;
-} */
+.form__item { 
+  display: flex;
+  flex-direction: column;
+  line-height: 70px;
+  border-bottom: 1px solid #353535;
+  overflow:visible;
+  
+}
+.after-bnt {
+  position: relative;
+  padding: 9px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 15px;
+  color: #fff;
+  background:rgba(255, 255, 255, 0.07);
+  background: 50%;
+  border: none;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+ 
+.after-bnt:hover {
+  background: rgba(255, 255, 255, 0.07);
+  background: 100%;
+  transition: all 500ms ease;
+  
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-/* .main__service {
- background-color: black;
-} */
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
 
-/* .main__resume {
-  background-color: #343a40;
-} */
+input, textarea {
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.07);
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+}
 
 .footer {
   display: flex;
@@ -126,5 +162,15 @@ body {
   background-color: black;
   color: beige;
 }
-
-/*# sourceMappingURL=styles.css.map */
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px ;
+  gap: 30px;
+}
+.footer__img {
+  height: 18px;
+  cursor: pointer;
+  
+}
